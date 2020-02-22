@@ -1,5 +1,5 @@
 var mongoose = require( 'mongoose' )
-var Address = require('./../models/Address')
+
 var validate = require('mongoose-validator')
 
 var studentSchema = new mongoose.Schema({
@@ -23,12 +23,11 @@ var studentSchema = new mongoose.Schema({
     required: true,
     message: 'Class is required'
   },
-  //address: [{ type: mongoose.Schema.ObjectId, ref: 'Address' }],
   contactNo: {
     type: Number,
     required: true,
-    minlength: 10,
-    maxlength: 10,
+    min: [1000000000, 'Contact number should be between 10-12 digits'],
+    max: [999999999999, 'Contact number should be between 10-12 digits'],
     message: 'Contact Number is required'
   },
   createdAt: Date,

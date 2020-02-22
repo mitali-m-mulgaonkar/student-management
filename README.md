@@ -4,6 +4,7 @@ TECH Stack- Node, Express, MongoDB
 
 # Steps to intall on local
 - git clone 
+- Add db password in config/constants.js file
 - yarn
 - yarn starts
 
