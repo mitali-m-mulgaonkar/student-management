@@ -9,7 +9,8 @@ var addressSchema = new mongoose.Schema({
   houseName: String,
   houseNumber: Number,
   createdAt: Date,
-  updatedAt: Date
+  updatedAt: Date,
+  user: { type: mongoose.Schema.ObjectId, ref: 'User' }
 })
 
 module.exports = mongoose.model('Address', addressSchema)
