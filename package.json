@@ -4,8 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "starts": "nodemon app.js",
+    "dev": "npx nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitali-m-mulgaonkar/student-management.git"
+  },
+  "author": "Mitali Mulgaonkar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.14",
+    "cors": "^2.8.4",
+    "jade": "^1.11.0"
+  }
 }

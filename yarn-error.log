@@ -1,0 +1,50 @@
+Arguments: 
+  /home/ark/.nvm/versions/node/v12.7.0/bin/node /home/ark/.yarn/bin/yarn.js
+
+PATH: 
+  /home/ark/.yarn/bin:/home/ark/.config/yarn/global/node_modules/.bin:/home/ark/.nvm/versions/node/v12.7.0/bin:/home/ark/bin:/home/ark/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.7.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/ark/mean/student-management/package.json: Unexpected token } in JSON at position 451
+      at JSON.parse (<anonymous>)
+      at /home/ark/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/ark/.yarn/lib/cli.js:310:30)
+      at /home/ark/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "student-management",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mitali-m-mulgaonkar/student-management.git"
+    },
+    "author": "Mitali Mulgaonkar",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "1.18.3",
+      "express": "^4.16.3",
+      "mongoose": "^5.2.14",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
