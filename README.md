@@ -24,7 +24,7 @@ Any endpoint can return an ERROR with a data for extended information.
 Sample ERROR Payload:
 ```javascript
 {
-  "data": "Something wen wrong"
+  "data": "Something went wrong"
 }
 ```
 
@@ -38,13 +38,13 @@ Sample ERROR Payload:
 
 This service provides the following endpoints:
 
-| Method       | endpoint           | VERB  | Descripcion         |
-| ------------ |:-------------      | :---: | --------------------|
-| [create]     | /v1/students       | POST  | creates new Student. Pass address as a array of objects                  
-| [update]     | /v1/students/:id   | PUT   | Updates student and address. Pass student object with array of addresses
-| [list]       | /v1/students       | GET   | Lists all the student with addresses
-| [view]       | /v1/students/:id   | POST  | Returns details of a particular student along with address
-| [delete]     | /v1/students/:id   | POST  | Removes student record
+| Method       | endpoint           | VERB    | Descripcion         |
+| ------------ |:-------------      | :---:   | --------------------|
+| [create]     | /v1/students       | POST    | creates new Student. Pass address as a array of objects                  
+| [update]     | /v1/students/:id   | PUT     | Updates student and address. Pass student object with array of addresses
+| [list]       | /v1/students       | GET     | Lists all the student with addresses
+| [view]       | /v1/students/:id   | GET     | Returns details of a particular student along with address
+| [delete]     | /v1/students/:id   | DELETE  | Removes student record
 
 
 ## List Students
