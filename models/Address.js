@@ -1,4 +1,5 @@
 var mongoose = require( 'mongoose' )
+var Student =  require('./../models/Student')
 
 var addressSchema = new mongoose.Schema({
   state: String,
@@ -10,7 +11,7 @@ var addressSchema = new mongoose.Schema({
   houseNumber: Number,
   createdAt: Date,
   updatedAt: Date,
-  user: { type: mongoose.Schema.ObjectId, ref: 'User' }
+  user: { type: mongoose.Schema.ObjectId, ref: 'Student' }
 })
 
 module.exports = mongoose.model('Address', addressSchema)
